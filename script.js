@@ -1,10 +1,17 @@
-var mealCost = 14.05;
-var tip = 0.1;
+var mealCost = Number(
+  prompt("Cost of meal (ex. 25.99)")
+);
+
+var tip = Number(
+  prompt("Tip percent (ex. .15 for 15%)")
+);
 
 var tipAmount = mealCost * tip;
 
 var total = tipAmount + mealCost;
-var numPeople = 2;
+var numPeople = Number(
+  prompt("Number of people (minimum of 1)")
+);
 
 var billShare = total / numPeople;
 
